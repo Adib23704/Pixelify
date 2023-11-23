@@ -2,58 +2,24 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 :root {
-	--main-color: #f7b1b1;
-	--secondary-color: #666;
+	--main-color: #333;
+	--secondary-color: #333;
 	--links-color: #816BFF;
 }
 
-body {
-	background-color: var(--main-color);
-	color: lighten(var(--secondary-color), 40);
-	animation: colorchange 30s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-play-state: running;
-	overflow: hidden;
+img {
+	max-width: 35%;
+	max-height: 35%;
 }
 
-@keyframes colorchange {
-	0% {
-		background: #C62828;
-	}
-
-	14% {
-		background: #EF6C00;
-	}
-
-	28% {
-		background: #F9A825;
-	}
-
-	42% {
-		background: #2E7D32;
-	}
-
-	56% {
-		background: #1565C0;
-	}
-
-	70% {
-		background: #6A1B9A;
-	}
-
-	84% {
-		background: #AD1457;
-	}
-
-	100% {
-		background: #C62828;
-	}
+body {
+	background: var(--main-color) url('/assets/bg.png') repeat;
+	color: lighten(var(--secondary-color), 40);
+	overflow: hidden;
 }
 
 .container {
 	font-family: 'Lato', sans-serif;
-	max-width: 640px;
 	margin: 0 auto;
 	padding: 0 1rem;
 	font-size: 16px;
@@ -61,13 +27,15 @@ body {
 
 .title {
 	margin: 0 0 .1em;
-	color: lighten(var(--secondary-color), 20);
+	color: white;
 	font-weight: 700;
+	font-size: 2em;
+	line-height: 1.2;
 }
 
 .sec {
 	margin: 0 0 .75em;
-	color: lighten(var(--secondary-color), 40);
+	color: white;
 	font-weight: 100;
 }
 
@@ -77,4 +45,11 @@ h2 {
 
 .center {
 	text-align: center;
+}
+
+.title:hover,
+.sec:hover,
+.imageHolder:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
 }
