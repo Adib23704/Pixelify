@@ -13,7 +13,7 @@ img {
 }
 
 body {
-	background: var(--main-color) url('/assets/bg.png') repeat;
+	background: var(--main-color) url('https://adib23704.github.io/Pixelify/assets/bg.png') repeat;
 	color: lighten(var(--secondary-color), 40);
 	overflow: hidden;
 }
